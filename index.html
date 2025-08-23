@@ -4,29 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NOVA-XMD SETTINGS</title>
+
+  <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css"> <!-- CSS ya project -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <canvas id="bg-canvas"></canvas>
+<canvas id="bg-canvas"></canvas>
 
-  <!-- Header & Menu -->
-  <header>
-    <div class="logo"><span>NOVA</span>-TECH</div>
-    <button id="menu-toggle"><i class="fas fa-bars"></i></button>
-  </header>
+<header>
+  <div class="logo-text"><span class="primary-light">NOVA</span>-<span>NOVA</span></div>
+  <button id="menu-toggle" class="menu-btn"><i class="fas fa-bars"></i></button>
+</header>
 
-  <nav id="drawer">
-    <!-- menu content -->
-  </nav>
+<nav id="drawer">
+  <div class="drawer-header">
+    <strong class="primary-light">NOVA-TECH</strong>
+    <button id="close-menu" class="menu-btn"><i class="fas fa-times"></i></button>
+  </div>
+  <ul>
+    <li><a href="#pair" onclick="closeMenu()">Pair</a></li>
+    <li><a href="#deploy" onclick="closeMenu()">Deploy</a></li>
+    <li><a href="#panel" onclick="closeMenu()">Panel</a></li>
+  </ul>
+  <a href="https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z" target="_blank" class="btn full-btn">Follow Channel</a>
+</nav>
 
-  <!-- Sections -->
-  <section id="welcome">...</section>
-  <section id="pair">...</section>
-  <section id="deploy">...</section>
-  <section id="footer">...</section>
+<section id="welcome">
+  <div class="container">
+    <div class="reveal logo-container">
+      <img src="https://files.catbox.moe/w76aqo.jpg" alt="NOVA-XMD LOGO" />
+    </div>
 
-  <script src="js/main.js"></script> <!-- JS ya project -->
+    <h1 class="reveal title">
+      <span class="gradient-text">NOVA-XMD</span>
+    </h1>
+
+    <div class="reveal cards-grid">
+      <div class="card">
+        <h3>📊 Dashboard</h3>
+        <p>Live overview of your bot activity and performance.</p>
+        <p>⭐ Stars: <span id="stars">0</span></p>
+        <p>🍴 Forks: <span id="forks">0</span></p>
+        <p>👥 Followers: <span id="followers">0</span></p>
+      </div>
+      <div class="card">
+        <h3>📦 Plugin System</h3>
+        <p>Flexible plugin structure, easily extensible with 1 click.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Smart Commands</h3>
+        <p>AI-powered replies, media tools, and moderation utilities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pair">
+  <div class="container">
+    <h2 class="reveal">🔐 Pair Your Bot</h2>
+    <p class="reveal">GENERATE A QR OR PAIR CODE TO LINK NOVA-XMD WITH WHATSAPP.</p>
+    <div class="reveal pair-buttons">
+      <a href="https://session-bmb-code.onrender.com/qr" target="_blank" class="btn"><i class="fas fa-qrcode"></i> Scan QR Code</a>
+      <a href="https://session-bmb-code.onrender.com/" target="_blank" class="btn"><i class="fas fa-link"></i> GET PAIR CODE</a>
+    </div>
+  </div>
+</section>
+
+<section id="deploy">
+  <div class="container">
+    <div class="reveal">
+      <h2>🚀 DEPLOY NOVA-XMD</h2>
+      <p>Choose your preferred hosting platform to launch the bot in one click.</p>
+    </div>
+
+    <div class="reveal deploy-grid">
+      <div class="card">
+        <img src="https://www.herokucdn.com/favicon.ico" alt="Heroku" />
+        <h3>Heroku</h3>
+        <p>Deploy bot instantly on Heroku.</p>
+        <a href="https://dashboard.heroku.com/new?template=https://github.com/novaxmd/NOVA-XMD/tree/main" target="_blank" class="btn">Deploy Now</a>
+      </div>
+      <div class="card">
+        <img src="https://files.catbox.moe/pj5in3.jpg" alt="Render" />
+        <h3>Render</h3>
+        <p>Host it on Render's cloud services.</p>
+        <a href="https://dashboard.render.com/web/new" target="_blank" class="btn">Deploy Render</a>
+      </div>
+      <div class="card">
+        <img src="https://railway.app/favicon.ico" alt="Railway" />
+        <h3>Railway</h3>
+        <p>Deploy and monitor via Railway.</p>
+        <a href="https://railway.com/" target="_blank" class="btn">Use Railway</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container reveal">
+    <h3>🤖 nova xmd on GitHub</h3>
+    <p>Join over 2,000 users and contributors building better WhatsApp bots together.</p>
+    <div class="social-buttons">
+      <a href="https://github.com/novaxmd" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://t.me/bmb-xmd" class="btn" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+      <a href="https://wa.me/255767862457" class="btn" target="_blank"><i class="fas fa-book"></i> Contact</a>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> NOVA-XMD built by EDNUT</p>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<script src="script.js"></script>
 </body>
-  </html>
+                         </html>
