@@ -1,2 +1,0 @@
-# nova-web
-NOVA XMD 
