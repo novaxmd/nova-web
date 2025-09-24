@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B.M.B TECH - Ultimate Toolkit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">B.M.B TECH</div>
+    <button class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="mainNav">
+    <div class="nav-header">
+      <div class="logo">B.M.B TECH</div>
+      <button class="close-nav" id="closeNav">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="nav-link" data-section="home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#" class="nav-link" data-section="youtube"><i class="fab fa-youtube"></i> YouTube Downloader</a></li>
+      <li><a href="#" class="nav-link" data-section="apk"><i class="fas fa-mobile-alt"></i> APK Downloader</a></li>
+      <li><a href="#" class="nav-link" data-section="tiktok"><i class="fab fa-tiktok"></i> TikTok Downloader</a></li>
+      <li><a href="#" class="nav-link" data-section="facebook"><i class="fab fa-facebook"></i> Facebook Downloader</a></li>
+      <li><a href="#" class="nav-link" data-section="panel"><i class="fas fa-cogs"></i> Bot Panel</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="tool-section active">
+      <div class="hero">
+        <h1 class="floating">B.M.B TECH ULTIMATE TOOLKIT</h1>
+        <p>Your all-in-one solution for media downloading, bot deployment, and powerful utilities</p>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-card">
+          <i class="fas fa-battery-three-quarters"></i>
+          <h3 id="batteryLevel">--%</h3>
+          <p>Battery</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-network-wired"></i>
+          <h3 id="networkSpeed">-- Mbps</h3>
+          <p>Network Speed</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-clock"></i>
+          <h3 id="tanzaniaTime">--:--</h3>
+          <p>Tanzania Time</p>
+        </div>
+        <div class="stat-card">
+          <i class="fas fa-wifi"></i>
+          <h3 id="connectionType">--</h3>
+          <p>Connection</p>
+        </div>
+      </div>
+      <div class="tools-grid">
+        <!-- YouTube Downloader Card -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <h2>YouTube Downloader</h2>
+            <p>Download videos and music from YouTube</p>
+          </div>
+          <div class="tool-content">
+            <a href="#" class="btn nav-link" data-section="youtube">
+              <i class="fab fa-youtube"></i> Open Tool
+            </a>
+          </div>
+        </div>
+        <!-- APK Downloader Card -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <h2>APK Downloader</h2>
+            <p>Get Android apps directly</p>
+          </div>
+          <div class="tool-content">
+            <a href="#" class="btn nav-link" data-section="apk">
+              <i class="fas fa-mobile-alt"></i> Open Tool
+            </a>
+          </div>
+        </div>
+        <!-- TikTok Downloader Card -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <h2>TikTok Downloader</h2>
+            <p>Save videos without watermark</p>
+          </div>
+          <div class="tool-content">
+            <a href="#" class="btn nav-link" data-section="tiktok">
+              <i class="fab fa-tiktok"></i> Open Tool
+            </a>
+          </div>
+        </div>
+        <!-- Facebook Downloader Card -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <h2>Facebook Downloader</h2>
+            <p>Download videos from Facebook</p>
+          </div>
+          <div class="tool-content">
+            <a href="#" class="btn nav-link" data-section="facebook">
+              <i class="fab fa-facebook"></i> Open Tool
+            </a>
+          </div>
+        </div>
+        <!-- Bot Panel Card -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <h2>Bot Panel</h2>
+            <p>Control your WhatsApp bot</p>
+          </div>
+          <div class="tool-content">
+            <a href="#" class="btn nav-link" data-section="panel">
+              <i class="fas fa-robot"></i> Open Panel
+            </a>
+          </div>
+        </div>
+        <!-- Pair Bot Card -->
+        <div class="tool-card">
+          <div class="tool-header">
+            <h2>Pair Your Bot</h2>
+            <p>Connect your WhatsApp account</p>
+          </div>
+          <div class="tool-content">
+            <a href="https://session-bmb-code.onrender.com/qr" target="_blank" class="btn">
+              <i class="fas fa-qrcode"></i> Scan QR
+            </a>
+            <a href="https://session-bmb-code.onrender.com/" target="_blank" class="btn btn-outline" style="margin-top: 0.5rem;">
+              <i class="fas fa-link"></i> Pair Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube Downloader Section (REVISED) -->
+    <section id="youtube" class="tool-section">
+      <button class="back-btn nav-link" data-section="home">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </button>
+      <h2><i class="fab fa-youtube"></i> YouTube Downloader</h2>
+      <p>Download or Play videos/music from YouTube easily</p>
+      <!-- Search bar juu kabisa -->
+      <div class="search-bar">
+        <input type="text" id="ytSearch" class="search-input" placeholder="Search YouTube or paste URL...">
+        <button class="btn" id="ytSearchBtn">
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+      <div class="loader" id="ytLoader"></div>
+      <!-- List ya nyimbo/videos -->
+      <div class="results-grid" id="ytResults"></div>
+    </section>
+
+    <!-- APK Downloader Section -->
+    <section id="apk" class="tool-section">
+      <!-- ... (weka contents yako ya APK downloader original hapa, unchanged) ... -->
+    </section>
+
+    <!-- TikTok Downloader Section -->
+    <section id="tiktok" class="tool-section">
+      <!-- ... (weka contents yako ya TikTok downloader original hapa, unchanged) ... -->
+    </section>
+
+    <!-- Facebook Downloader Section -->
+    <section id="facebook" class="tool-section">
+      <!-- ... (weka contents yako ya Facebook downloader original hapa, unchanged) ... -->
+    </section>
+
+    <!-- Bot Panel Section -->
+    <section id="panel" class="tool-section">
+      <!-- ... (weka contents yako ya Bot Panel original hapa, unchanged) ... -->
+    </section>
+  </main>
+
+  <!-- Audio Controls -->
+  <div class="audio-controls" id="audioControls" style="display: none;">
+    <button class="audio-btn" id="playPauseBtn">
+      <i class="fas fa-play"></i>
+    </button>
+    <input type="range" min="0" max="1" step="0.01" value="0.5" class="volume-control" id="volumeControl">
+    <button class="audio-btn" id="closeAudioBtn">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
