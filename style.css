@@ -1,0 +1,23 @@
+:root {
+  --primary: #00ff88;
+  --secondary: #00e0ff;
+  --accent: #ff006a;
+  --dark: #0f0f0f;
+  --light: #ffffff;
+  --glass: rgba(255, 255, 255, 0.05);
+  --radius: 16px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+/* ... (copy all your previous CSS here, unchanged) ... */
+.video-preview {
+  margin-top: 10px;
+  display: none;
+}
